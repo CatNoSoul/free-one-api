@@ -3,6 +3,7 @@ FROM python:3.10.13-slim-bullseye
 WORKDIR /app
 
 # copy dist of web
+COPY ./web/ /app/web/
 COPY ./free_one_api /app/free_one_api
 COPY ./requirements.txt ./main.py /app/
 
